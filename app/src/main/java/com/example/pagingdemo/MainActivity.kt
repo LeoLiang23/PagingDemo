@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val myPagedListAdapter = MyPagedListAdapter()
         recyclerView.layoutManager = LinearLayoutManager(this)
+        val myPagedListAdapter = MyPagedListAdapter()
         recyclerView.adapter = myPagedListAdapter
 
         /**
