@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.paging.PagingDataAdapter;
+import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 
 /**
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.DiffUtil;
  * On Create: 2020/11/3 15:09
  * Description
  */
-class MyPagedListAdapter extends PagingDataAdapter<MyDataBean, MyViewHolder> {
+class MyPagedListAdapter extends PagedListAdapter<MyDataBean, MyViewHolder> {
 
 
     private static DiffUtil.ItemCallback<MyDataBean> DIFF_CALLBACK =
